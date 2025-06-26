@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="row g-3 gallery">
+            <!-- Sidebar -->
+            <div class="col-sm-12 col-md-3">
+                <div class="sidebar">
+                    <h6 class="m-0 p-2 rounded-top">
+                        <strong class="ps-2">नेविगेशन</strong>
+                    </h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#">प्रेस विज्ञप्ति</a></li>
+                        <li class="list-group-item"><a href="./index.html">इमेज गैलरी</a></li>
+                        <li class="list-group-item"><a href="#">स्वच्छ दिल्ली</a></li>
+                        <li class="list-group-item"><a href="video.html">वीडियो गैलरी</a></li>
+                        <li class="list-group-item"><a href="#">संदेश</a></li>
+                        <li class="list-group-item rounded-bottom"><a href="#">अभिभाषण</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-sm-12 col-md-9">
+                <!-- Filter Box -->
+        <div class="filter-box position-relative">
+          <span class="filter-label">Filter</span>
+          <form id="filterForm" class="row g-3 mt-3">
+
+            <div class="col-12 col-md-5 position-relative">
+              <label for="textFilter" class="form-label">Keyword</label>
+              <input type="text" class="form-control" id="textFilter" placeholder="" />
+            </div>
+
+            <div class="col-12 col-md-5 position-relative ">
+              <label for="dateFilter" class="form-label">Date</label>
+              <input type="date" class="form-control" id="dateFilter" />
+            </div>
+
+            <div class="col-12 col-md-2 d-flex align-items-end">
+              <button type="submit" class="btn submit-btn w-100">Apply</button>
+            </div>
+
+          </form>
+        </div>
+
+                <!-- Image Grid -->
+                <div class="row">
+                    <!-- Card1 -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+                        <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+                            <!-- Date Badge -->
+                            <p class="date-badge d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                                    class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                                    <path
+                                        d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                                </svg><span class="ps-2">30-05-2025</span>
+                            </p>
+                            <div class="position-relative">
+                                <img src="./images/video-gallery1.jpg" data-bs-target="#galleryModal"
+                                    data-bs-slide-to="2" data-bs-toggle="modal" alt="Image 3"
+                                    class="w-100 rounded-4 img-fluid">
+                                <span class="position-absolute top-50 start-50 translate-middle bg-white p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="red"
+                                        class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="mt-1 mb-0">माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण
+                                द्वारा आयोजित 25वें वार्षिक गोल्फ टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की
+                                अध्यक्षता की।</p>
+                        </div>
+                    </div>
+
+                    <!-- Card2 -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+                        <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+                            <p class="date-badge d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                                    class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                                    <path
+                                        d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                                </svg><span class="ps-2">30-05-2025</span>
+                            </p>
+                            <div class="position-relative">
+                                <img src="./images/video-gallery2.jpg" data-bs-target="#galleryModal"
+                                    data-bs-slide-to="2" data-bs-toggle="modal" alt="Image 3"
+                                    class="w-100 rounded-4 img-fluid">
+                                <span class="position-absolute top-50 start-50 translate-middle bg-white p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="red"
+                                        class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="mt-1 mb-0">माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण
+                                द्वारा आयोजित 25वें वार्षिक गोल्फ टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की
+                                अध्यक्षता की।</p>
+                        </div>
+                    </div>
+
+                    <!-- Card3 -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+                        <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+                            <p class="date-badge d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                                    class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                                    <path
+                                        d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                                </svg><span class="ps-2">30-05-2025</span>
+                            </p>
+                            <div class="position-relative">
+                                <img src="./images/video-gallery3.jpg" data-bs-target="#galleryModal"
+                                    data-bs-slide-to="2" data-bs-toggle="modal" alt="Image 3"
+                                    class="w-100 rounded-4 img-fluid">
+                                <span class="position-absolute top-50 start-50 translate-middle bg-white p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="red"
+                                        class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="mt-1 mb-0">माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण
+                                द्वारा आयोजित 25वें वार्षिक गोल्फ टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की
+                                अध्यक्षता की।</p>
+                        </div>
+                    </div>
+
+                    <!-- Card4 -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+                        <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+                            <p class="date-badge d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                                    class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                                    <path
+                                        d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                                </svg><span class="ps-2">30-05-2025</span>
+                            </p>
+                            <div class="position-relative">
+                                <img src="./images/video-gallery4.jpg" data-bs-target="#galleryModal"
+                                    data-bs-slide-to="2" data-bs-toggle="modal" alt="Image 3"
+                                    class="w-100 rounded-4 img-fluid">
+                                <span class="position-absolute top-50 start-50 translate-middle bg-white p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="red"
+                                        class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="mt-1 mb-0">माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण
+                                द्वारा आयोजित 25वें वार्षिक गोल्फ टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की
+                                अध्यक्षता की।</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Pagination -->
+                    <div class="col-md-12">
+                        <div class="pagination-container mt-4">
+                            <nav>
+                                <ul class="pagination justify-content-center" id="pagination"></ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal with YouTube Carousel -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div id="galleryCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/oW0WSL3m9Uk?si=TSPJ5T9o6dG8koVv"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-caption">
+                                    <p>माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण द्वारा आयोजित
+                                        25वें वार्षिक गोल्फ टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की अध्यक्षता की।
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/H2FYx57vmWc?si=sHxxB9Zsy7-0L5ow"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-caption">
+                                    <p>माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण द्वारा आयोजित
+                                        25वें वार्षिक गोल्फ टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की अध्यक्षता की।
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/d-9uXmpsFQs?si=Oi44uNyvv6xc6X5O"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-caption">
+                                    <p>माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण द्वारा आयोजित
+                                        25वें वार्षिक गोल्फ टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की अध्यक्षता की।
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="carousel-item">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/dGKPHsX3G-0?si=WB7FpEMxLpPFT7u1"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-caption">
+                                    <p>माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण द्वारा आयोजित
+                                        25वें वार्षिक गोल्फ टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की अध्यक्षता की।
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slider Controls -->
+                        <div class="slider-controls">
+                            <div class="left-buttons">
+                                <button data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                                    <img src="./icon/icons8-back-arrow-25.png" alt="Previous">
+                                </button>
+                                <button data-bs-target="#galleryCarousel" data-bs-slide="next">
+                                    <img src="./icon/icons8-right-arrow-25.png" alt="Next">
+                                </button>
+                                <span id="slide-counter">1 out of 4</span>
+
+                            </div>
+                            <div class="right-buttons">
+                                <button data-bs-dismiss="modal">
+                                    <img src="./icon/icons8-close-25.png" alt="Close">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container py-4">
+    <div class="row g-3 gallery">
+
+      <!-- Sidebar -->
+      <div class="col-sm-12 col-md-3">
+        <div class="sidebar">
+          <h6 class="m-0 p-2 rounded-top">
+            <strong class="ps-2">नेविगेशन</strong>
+          </h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">प्रेस विज्ञप्ति</a></li>
+            <li class="list-group-item"><a href="./index.html">इमेज गैलरी</a></li>
+            <li class="list-group-item"><a href="#">स्वच्छ दिल्ली</a></li>
+            <li class="list-group-item"><a href="video.html">वीडियो गैलरी</a></li>
+            <li class="list-group-item"><a href="#">संदेश</a></li>
+            <li class="list-group-item rounded-bottom"><a href="#">अभिभाषण</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-sm-12 col-md-9">
+
+        <!-- Filter Box -->
+        <div class="filter-box position-relative">
+          <span class="filter-label">Filter</span>
+          <form id="filterForm" class="row g-3 mt-3">
+
+            <div class="col-12 col-md-5 position-relative">
+              <label for="textFilter" class="form-label">Keyword</label>
+              <input type="text" class="form-control" id="textFilter" placeholder="" />
+            </div>
+
+            <div class="col-12 col-md-5 position-relative ">
+              <label for="dateFilter" class="form-label">Date</label>
+              <input type="date" class="form-control" id="dateFilter" />
+            </div>
+
+            <div class="col-12 col-md-2 d-flex align-items-end">
+              <button type="submit" class="btn submit-btn w-100">Apply</button>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="row">
+
+          <!-- Image Card 1 -->
+          <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+            <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+              <p class="date-badge d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                  class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                  <path
+                    d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                </svg><span class="ps-2">30-05-2025</span>
+              </p>
+              <img src="./images/image-gallery1.jpg" data-bs-target="#galleryModal" data-bs-slide-to="0"
+                data-bs-toggle="modal" alt="Image 1" data-bs-slide="true" class="w-100 rounded-4 img-fluid" />
+              <p class="mt-1 mb-0 font-semibold">
+                राज निवास में हमारे वीर सशस्त्र बलों के साथ एकजुटता व्यक्त करने के लिए सर्व धर्म सभा का आयोजन किया गया।
+                11.05.2025
+              </p>
+            </div>
+          </div>
+
+          <!-- Image Card 2 -->
+          <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+            <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+              <p class="date-badge d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                  class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                  <path
+                    d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                </svg><span class="ps-2">30-05-2025</span>
+              </p>
+              <img src="./images/image-gallery2.jpg" data-bs-target="#galleryModal" data-bs-slide-to="1"
+                data-bs-toggle="modal" alt="Image 2" data-bs-slide="true" class="w-100 rounded-4 img-fluid" />
+              <p class="mt-1 mb-0 font-semibold">
+                माननीय उपराज्यपाल महोदय ने माननीय मुख्यमंत्री श्रीमती रेखा गुप्ता एवं माननीय अध्यक्ष श्री विजेंद्र
+                गुप्ता के साथ दिल्ली विधान सभा में 500 केवी सौर ऊर्जा प्लांट की आधारशिला रखी। 12.05.2025
+              </p>
+            </div>
+          </div>
+
+          <!-- Image Card 3 -->
+          <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+            <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+              <p class="date-badge d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                  class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                  <path
+                    d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                </svg><span class="ps-2">30-05-2025</span>
+              </p>
+              <img src="./images/image-gallery3.jpg" data-bs-target="#galleryModal" data-bs-slide-to="2"
+                data-bs-toggle="modal" alt="Image 3" data-bs-slide="true" class="w-100 rounded-4 img-fluid" />
+              <p class="mt-1 mb-0 font-semibold">
+                राज निवास में सिक्किम और हिमाचल प्रदेश का स्थापना दिवस मनाया गया।
+              </p>
+            </div>
+          </div>
+
+          <!-- Image Card 4 -->
+          <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+            <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+              <p class="date-badge d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                  class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                  <path
+                    d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                </svg><span class="ps-2">30-05-2025</span>
+              </p>
+              <img src="./images/image-gallery4.jpg" data-bs-target="#galleryModal" data-bs-slide-to="3"
+                data-bs-toggle="modal" alt="Image 4" data-bs-slide="true" class="w-100 rounded-4 img-fluid" />
+              <p class="mt-1 mb-0 font-semibold">
+                माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण द्वारा आयोजित 25वें वार्षिक गोल्फ
+                टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की अध्यक्षता की।
+              </p>
+            </div>
+          </div>
+
+          <!-- Image Card 5 -->
+          <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+            <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+              <div>
+                <img src="./images/image-gallery5.jpg" data-bs-target="#galleryModal" data-bs-slide-to="2"
+                  data-bs-toggle="modal" alt="Image 3" data-bs-slide="true" class="w-100 rounded-4 img-fluid" />
+                <p class="date-badge d-flex align-items-center justify-content-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                    class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                    <path
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                    <path
+                      d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                  </svg><span class="ps-2">30-05-2025</span>
+                </p>
+
+              </div>
+              <p class="mt-1 mb-0 font-semibold">
+                माननीय उपराज्यपाल ने गुजरात और महाराष्ट्र के स्थापना दिवस के अवसर पर माननीय केंद्रीय गृह और सहकारिता
+                मंत्री श्री अमित शाह जी की गरिमामयी उपस्थिति में डीडीए के असिता में मिलन समारोह की मेजबानी की।
+              </p>
+            </div>
+          </div>
+
+          <!-- Image Card 6 -->
+          <div class="col-sm-12 col-md-6 col-lg-6 gallery-item gallery-cards">
+            <div class="gallery-card bg-white rounded-4 p-2 text-center my-3">
+              <p class="date-badge d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" fill="currentColor"
+                  class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                  <path
+                    d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                </svg><span class="ps-2">30-05-2025</span>
+              </p>
+              <img src="./images/image-gallery2.jpg" data-bs-target="#galleryModal" data-bs-slide-to="3"
+                data-bs-toggle="modal" alt="Image 4" data-bs-slide="true" class="w-100 rounded-4 img-fluid" />
+              <p class="mt-1 mb-0 font-semibold">
+                माननीय उपराज्यपाल महोदय ने माननीय मुख्यमंत्री श्रीमती रेखा गुप्ता एवं माननीय अध्यक्ष श्री विजेंद्र
+                गुप्ता के साथ दिल्ली विधान सभा में 500 केवी सौर ऊर्जा प्लांट की आधारशिला रखी। 12.05.2025
+
+              </p>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="col-md-12">
+            <div class="pagination-container mt-4">
+              <nav>
+                <ul class="pagination justify-content-center" id="pagination"></ul>
+              </nav>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal with Carousel -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div id="galleryCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <img src="./images/image-gallery1.jpg" class="d-block w-100 img-fluid" alt="Image 1" />
+                <div class="carousel-caption">
+                  <p>
+                    राज निवास में हमारे वीर सशस्त्र बलों के साथ एकजुटता व्यक्त करने के लिए सर्व धर्म सभा का आयोजन किया
+                    गया। 11.05.2025
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <img src="./images/image-gallery2.jpg" class="d-block w-100 img-fluid" alt="Image 2" />
+                <div class="carousel-caption">
+                  <p>
+                    माननीय उपराज्यपाल महोदय ने माननीय मुख्यमंत्री श्रीमती रेखा गुप्ता एवं माननीय अध्यक्ष श्री विजेंद्र
+                    गुप्ता के साथ दिल्ली विधान सभा में 500 केवी सौर ऊर्जा प्लांट की आधारशिला रखी। 12.05.2025
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <img src="./images/image-gallery3.jpg" class="d-block w-100 img-fluid" alt="Image 3" />
+                <div class="carousel-caption">
+                  <p>
+                    राज निवास में सिक्किम और हिमाचल प्रदेश का स्थापना दिवस मनाया गया।
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <img src="./images/image-gallery4.jpg" class="d-block w-100 img-fluid" alt="Image 4" />
+                <div class="carousel-caption">
+                  <p>
+                    माननीय उपराज्यपाल ने कुतुब गोल्फ कोर्स में दिल्ली विकास प्राधिकरण द्वारा आयोजित 25वें वार्षिक गोल्फ
+                    टूर्नामेंट एलजी कप के पुरस्कार वितरण समारोह की अध्यक्षता की।
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="carousel-item">
+                <img src="./images/image-gallery5.jpg" class="d-block w-100 img-fluid" alt="Image 4" />
+                <div class="carousel-caption">
+                  <p>
+                    माननीय उपराज्यपाल ने गुजरात और महाराष्ट्र के स्थापना दिवस के अवसर पर माननीय केंद्रीय गृह और सहकारिता
+                    मंत्री श्री अमित शाह जी की गरिमामयी उपस्थिति में डीडीए के असिता में मिलन समारोह की मेजबानी की।
+                  </p>
+                </div>
+              </div>
+
+              <!-- Slide 6 -->
+              <div class="carousel-item">
+                <img src="./images/image-gallery2.jpg" class="d-block w-100 img-fluid" alt="Image 4" />
+                <div class="carousel-caption">
+                  <p>
+                    माननीय उपराज्यपाल ने गुजरात और महाराष्ट्र के स्थापना दिवस के अवसर पर माननीय केंद्रीय गृह और सहकारिता
+                    मंत्री श्री अमित शाह जी की गरिमामयी उपस्थिति में डीडीए के असिता में मिलन समारोह की मेजबानी की।
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+              <div class="left-buttons">
+                <button data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                  <img src="./icon/icons8-back-arrow-25.png" alt="Previous" />
+                </button>
+                <button data-bs-target="#galleryCarousel" data-bs-slide="next">
+                  <img src="./icon/icons8-right-arrow-25.png" alt="Next" />
+                </button>
+                <span id="slide-counter">1 out of 4</span>
+              </div>
+              <div class="right-buttons">
+                <button data-bs-dismiss="modal">
+                  <img src="./icon/icons8-close-25.png" alt="Close" />
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
