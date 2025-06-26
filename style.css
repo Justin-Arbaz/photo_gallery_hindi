@@ -21,6 +21,7 @@ body {
 .sidebar ul li a {
   display: block;
   text-decoration: none;
+   color: #111;
   font-weight: 500;
   font-size: 14px;
 }
