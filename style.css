@@ -251,6 +251,13 @@ body {
   border-radius: 4px;
 }
 
+
+#galleryModal .carousel-item img {
+  height: 600px; /* Set desired height */
+  object-fit: cover; /* Ensures image fills the space without distortion */
+  width: 100%;
+}
+
 /* Responsive Modal */
 @media (max-width: 576px) {
   .carousel-item {
